@@ -1,0 +1,136 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="indexstylesheet.css">
+        <link rel="icon" type="image/x-icon" href="safi.jpg">
+        <title>Safi</title>
+
+
+<style>
+           @font-face {
+                font-family: chunk;
+                src: url(chunk.otf);
+                                        }
+
+            h0{
+            font-family: bold;
+            font-family: sans-serif;
+
+            font-size: 50;
+            color: #333;
+                }
+
+            h1 {
+            font-family: sans-serif;
+            color: #333;
+            }
+            body {
+                background-color:#9AAB89 ;
+            margin: 50px;
+            }
+            #container {
+                margin: 0px auto;
+                width: 500px;
+                height: 375px;
+                background-color: #666;
+            }
+            #videoElement{
+                width: 500px;
+                height: 375px;
+                background-color: #666;
+            }
+            ul{
+                width: 220px;
+                background-color: #75816b;
+                float: left;
+                font-family: chunk;
+                list-style: none;
+                margin-left: 45px;
+                padding: 0px;     
+                font-size: 125%;  
+                margin-top: -0px;
+            }
+            li{
+                padding: 0;
+                margin: 0;
+            }
+            a{
+                display: block;
+                    border-bottom: 1px solid #FFFFFF;
+                    border-top: 1px solid #FFFFFF;
+                    border-left: 1px solid #FFFFFF;
+                    border-right: 1px solid #FFFFFF;
+                padding: 4px 0px 2px;
+                text-decoration: none;
+                color: #221c16;
+                text-align: center;
+            }
+            a:hover{
+                color: #FFFFFF;
+            }
+
+</style>
+</head>
+<body>
+    <h0>Safi Personal Care</h0>
+    <h1>Scan Drug Fact Label Below</h1>
+    <div id="container">
+            <video autoplay="true" id="videoElement">
+            </video>
+    </div>
+
+<div>
+            <p>
+            Ingredient Analysis: Scanning or inputting product ingredients to provide information about their potential benefits or harmful effects.
+            </p>
+            Product Reviews: Aggregating user reviews and ratings for various personal care products.
+            </p>
+
+            Allergen Alerts: Notifying users of potential allergens in specific products based on their ingredient lists.
+            </p>
+
+            Product Recommendations: Suggesting alternative products based on user preferences and skin type.
+            </p>
+
+            Expiration Tracking: Reminding users of the expiration dates of their personal care products.
+            </p>
+
+            Personalized Skincare Routine: Creating customized skincare routines based on individual needs and concerns.
+            </p>
+</div>
+
+<div id="Ingredient">
+    <h2>Ingredients List: </h2>
+        <ul>
+        <li><a href="ingredients/index.html">Ingredient</a></li>
+        <li><a href="ingredients/index.html">Ingredient</a></li>
+        <li><a href="ingredients/index.html">Ingredient</a></li>
+        <li><a href="ingredients/index.html">Ingredient</a></li>
+        <li><a href="ingredients/index.html">Ingredient</a></li>
+        </ul>
+
+<ul class = "bullet_list">
+        <li><a href="ingredients/index.html">Ingredient</a></li>
+        <li><a href="ingredients/index.html">Ingredient</a></li>
+        <li><a href="ingredients/index.html">Ingredient</a></li>
+        <li><a href="ingredients/index.html">Ingredient</a></li>
+        <li><a href="ingredients/index.html">Ingredient</a></li>
+</ul>
+</div>  
+
+            <script>
+              var video = document.querySelector("#videoElement");
+
+               if (navigator.mediaDevices.getUserMedia) {
+               navigator.mediaDevices.getUserMedia({ video: true })
+                .then(function (stream) {
+                  video.srcObject = stream;
+                })
+                .catch(function (err0r) {
+                  console.log("Something went wrong!");
+                });
+                 }
+
+
+             </script>
+    </body>
+</html>
